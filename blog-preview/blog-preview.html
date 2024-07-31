@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Preview</title>
+        <style>
+
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-size: 7px;
+            }
+
+            body {
+                background-color: hsl(47, 88%, 63%);
+                font-family: 'Figtree';
+                margin: 0;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .card-container {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+    
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: flex-start;
+                background-color: white;
+                border-radius: 20px;
+                width: 330px;
+                height: 400px;
+                padding: 25px;
+                border: 2px solid black;
+                box-shadow: 5px 5px black;
+                position: relative;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 20px;
+            
+            }
+
+            .illustration-article {
+                border-radius: 10px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .tag {
+                display: flex;
+                background-color: hsl(47, 88%, 63%);
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+
+            .published {
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+
+            .title:hover {
+                color: hsl(47, 88%, 63%);
+            }
+
+            .title {
+                margin-bottom: 5px;
+                font-size: 20px;
+                font-weight: bolder;
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+            }
+
+            .preview {
+                color: hsl(0, 0%, 42%);
+                margin-bottom: 15px;
+                font-size: 13px;
+            }
+
+            .author {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+                
+            }
+
+            .profile-photo {
+                height: 24px;
+                margin-right: 8px;
+            }
+
+            .name {
+                font-size: 12px;
+                font-weight: bolder;
+            }
+
+            @font-face {
+                font-family: 'Figtree';
+                src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+            }
+
+        </style>
+
+        <link rel="icon" href="assets/images/favicon-32x32.png">
+
+    </head>
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img class="illustration-article" src="assets/images/illustration-article.svg">
+                </div>
+                <div class="tag">Learning</div>
+                <p class="published">Published 21 Dec 2023</p>
+                <button class="title">HTML & CSS foundations</button>
+                <p class="preview">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+                <div class="author">
+                    <img class="profile-photo" src="assets/images/image-avatar.webp">
+                    <p class="name">Greg Hooper</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
