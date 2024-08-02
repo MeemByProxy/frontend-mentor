@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results Summary</title>
+        <style>
+
+            * {
+                margin: 0;
+                font-family: 'Hanken Grotesk';
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .card {
+                display: flex;
+                height: 400px;
+                width: 600px;
+                border-radius: 20px;
+                background-color: white;
+            }
+
+            .result {
+                background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 72%, 46%));
+                width: 300px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .summary {
+                background-color: white;
+                width: 300px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;   
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                box-shadow: 5px 5px 30px rgb(205, 205, 205);
+            }
+
+            .your-result {
+                font-size: 20px;
+                color: hsl(221, 100%, 96%);
+                margin-bottom: 25px;
+            }
+
+            .score {
+                background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+                border-radius: 100px;
+                height: 125px;
+                width: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-top: 20px;
+        
+            }
+
+            .current-score {
+                font-weight: bold;
+                font-size: 50px;
+                color: white;
+            }
+
+            .out-of {
+                color: hwb(222 92% 0%);
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .great {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 20px;
+
+            }
+
+            .comment {
+                text-align: center;
+                color: hsl(221, 100%, 96%);
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 20px;
+                color: hsl(224, 30%, 27%);
+                margin-bottom: 25px;
+                font-weight: bold;
+                margin-left: 20px;
+            }
+            
+            .tile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                margin-right: 20px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+
+            }
+
+            .tile-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            .tile-1 {
+                background-color: hsl(0, 100%, 67%, 0.1);
+            }
+
+            .reaction {
+                color:  hsl(0, 100%, 67%);
+            }
+
+            .tile-2 {
+                background-color: hsl(39, 100%, 56%, 0.1);
+            }
+
+            .memory {
+                color: hsl(39, 100%, 56%);
+            }
+
+            .tile-3 {
+                background-color: hsl(166, 100%, 37%, 0.1);
+            }
+
+            .verbal {
+                color: hsl(166, 100%, 37%);
+            }
+
+            .tile-4 {
+                background-color: hsl(234, 85%, 45%, 0.1);
+            }
+
+            .visual {
+                color: hsl(234, 85%, 45%);
+            }
+
+            button {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 15px;
+                border-radius: 30px;
+                border: 0;
+                color: white;
+                background-color: hsl(224, 30%, 27%);
+                margin-top: 20px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 72%, 46%));
+            }
+
+            .tile-right {
+                color: hsl(0, 0%, 64%);
+                font-weight: bold;
+            }
+
+            .scun {
+                color: hsl(224, 30%, 27%);
+
+            }
+
+            }
+
+        </style>
+
+        <link rel="icon" href="assets/images/favicon-32x32.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="result">
+                    <h1 class="your-result">Your Result</h1>
+                    <div class="score">
+                        <p class="current-score">76</p>
+                        <p class="out-of">of 100</p>
+                    </div>
+                    <p class="great">Great</p>
+                    <p class="comment">You scored higher than 65% of<br>people who have taken<br>these tests.</p>
+                </div>
+                <div class="summary">
+                    <h1>Summary</h1>
+                    <div class="tile tile-1">
+                        <div class="tile-left">
+                            <img class="icon" src="assets/images/icon-reaction.svg">
+                            <span class="reaction">Reaction</span>
+                        </div>
+                        <div class="tile-right">
+                            <span class="scun">80 </span> / 100
+                        </div>
+                    </div>
+                    <div class="tile tile-2">
+                        <div class="tile-left memory">
+                            <img class="icon"  src="assets/images/icon-memory.svg">
+                            Memory
+                        </div>
+                        <div class="tile-right">
+                            <span class="scun">92 </span> / 100
+                        </div>
+                    </div>
+                    <div class="tile tile-3">
+                        <div class="tile-left verbal">
+                            <img class="icon" src="assets/images/icon-verbal.svg">
+                            Verbal
+                        </div>
+                        <div class="tile-right">
+                            <span class="scun">61 </span> / 100
+                        </div>
+                    </div>
+                    <div class="tile tile-4">
+                        <div class="tile-left visual">
+                            <img class="icon" src="assets/images/icon-visual.svg">
+                            Visual
+                        </div>
+                        <div class="tile-right">
+                            <span class="scun">72 </span> / 100
+                        </div>
+                    </div>
+                    <button class="continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
